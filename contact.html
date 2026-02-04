@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Reserve your seat at The Burn Room. Limited seats available for our curated private dining experiences in Kochi.">
+    <title>Reserve | The Burn Room</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* Contact Page Specific Styles */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--space-xl);
+            align-items: start;
+        }
+
+        .contact-card {
+            background: var(--bg-card);
+            border-radius: var(--radius-md);
+            padding: var(--space-lg);
+            border: 1px solid rgba(197, 165, 114, 0.2);
+        }
+
+        .contact-card h3 {
+            color: var(--accent-gold);
+            margin-bottom: var(--space-md);
+            font-size: 1.25rem;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-md);
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            gap: var(--space-sm);
+        }
+
+        .contact-item__icon {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--bg-secondary);
+            border-radius: 50%;
+            color: var(--accent-gold);
+            flex-shrink: 0;
+        }
+
+        .contact-item__text h4 {
+            font-size: 0.875rem;
+            color: var(--text-muted);
+            font-weight: 400;
+            margin-bottom: 0.25em;
+        }
+
+        .contact-item__text a,
+        .contact-item__text p {
+            color: var(--text-primary);
+            font-size: 1rem;
+            margin: 0;
+        }
+
+        .faq-list {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-md);
+        }
+
+        .faq-item {
+            background: var(--bg-card);
+            border-radius: var(--radius-md);
+            padding: var(--space-md);
+            border: 1px solid rgba(197, 165, 114, 0.1);
+        }
+
+        .faq-item h4 {
+            color: var(--accent-gold);
+            font-size: 1rem;
+            margin-bottom: var(--space-xs);
+        }
+
+        .faq-item p {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin: 0;
+        }
+
+        .map-placeholder {
+            aspect-ratio: 16/9;
+            background: var(--bg-card);
+            border-radius: var(--radius-md);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-muted);
+            border: 1px dashed rgba(197, 165, 114, 0.3);
+        }
+
+        @media (max-width: 768px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ========== Navigation ========== -->
+    <nav class="navbar scrolled" id="navbar">
+        <div class="container navbar__inner">
+            <a href="index.html" class="navbar__logo">
+                <span class="navbar__logo-text">The Burn Room</span>
+                <span class="navbar__logo-sub">by Keshav Menon</span>
+            </a>
+
+            <ul class="navbar__links">
+                <li><a href="index.html#story" class="navbar__link">Our Story</a></li>
+                <li><a href="experience.html" class="navbar__link">Experience</a></li>
+                <li><a href="menu.html" class="navbar__link">Menu</a></li>
+                <li><a href="index.html#events" class="navbar__link">Events</a></li>
+                <li><a href="contact.html" class="navbar__link">Reserve</a></li>
+            </ul>
+
+            <button class="navbar__toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ========== Page Header ========== -->
+    <header class="page-header">
+        <div class="container">
+            <span class="label">Reservations</span>
+            <h1 class="mt-md">Join Us at The Table</h1>
+            <p>Limited seats. Reservations only. Every experience is intimate.</p>
+        </div>
+    </header>
+
+    <!-- ========== Contact Section ========== -->
+    <section class="section section--large">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Info -->
+                <div class="fade-in">
+                    <div class="contact-card">
+                        <h3>How to Reserve</h3>
+                        <p class="text-muted mb-lg">
+                            We operate by reservation only. To book your seat at The Burn Room,
+                            reach out via Instagram DM or phone. We'll confirm availability and
+                            share the menu details for your chosen date.
+                        </p>
+
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <div class="contact-item__icon">
+                                    <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                                        <path
+                                            d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073z" />
+                                        <circle cx="12" cy="12" r="3.5" />
+                                    </svg>
+                                </div>
+                                <div class="contact-item__text">
+                                    <h4>Instagram</h4>
+                                    <a href="https://instagram.com/the_burnroom_" target="_blank"
+                                        rel="noopener">@the_burnroom_</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-item__icon">
+                                    <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                                        <path
+                                            d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 00-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z" />
+                                    </svg>
+                                </div>
+                                <div class="contact-item__text">
+                                    <h4>Phone</h4>
+                                    <a href="tel:+918848795728">+91 88487 95728</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-item__icon">
+                                    <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                                        <path
+                                            d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+                                    </svg>
+                                </div>
+                                <div class="contact-item__text">
+                                    <h4>Location</h4>
+                                    <p>Rock Paper Scissors Aesthetics<br>Panampily Nagar Extension, Kochi</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-md mt-lg" style="flex-wrap: wrap;">
+                            <a href="https://instagram.com/the_burnroom_" target="_blank" rel="noopener"
+                                class="btn btn--primary">
+                                DM on Instagram
+                            </a>
+                            <a href="tel:+918848795728" class="btn btn--outline">
+                                Call Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ -->
+                <div class="fade-in fade-in-delay-1">
+                    <h3 style="color: var(--accent-gold); margin-bottom: var(--space-md);">Frequently Asked Questions
+                    </h3>
+
+                    <div class="faq-list">
+                        <div class="faq-item">
+                            <h4>What is The Burn Room?</h4>
+                            <p>
+                                The Burn Room is a chef-curated private dining experience. We host intimate,
+                                fixed-menu dinners at a single table, serving multi-course tasting menus
+                                designed to be experienced slowly.
+                            </p>
+                        </div>
+
+                        <div class="faq-item">
+                            <h4>How many seats are available?</h4>
+                            <p>
+                                We keep our sessions intimate with limited seats per evening. Exact capacity
+                                varies by event, so we recommend booking early to secure your spot.
+                            </p>
+                        </div>
+
+                        <div class="faq-item">
+                            <h4>What about dietary restrictions?</h4>
+                            <p>
+                                Please inform us of any allergies or dietary requirements when making your
+                                reservation. Our menus typically include seafood, nuts, and dairy. We'll do
+                                our best to accommodate your needs.
+                            </p>
+                        </div>
+
+                        <div class="faq-item">
+                            <h4>What should I expect?</h4>
+                            <p>
+                                Expect a relaxed, unhurried evening. Dress comfortably but elevated.
+                                Each course is served with intent, and we encourage you to savor the
+                                experience without rush.
+                            </p>
+                        </div>
+
+                        <div class="faq-item">
+                            <h4>What is the pricing?</h4>
+                            <p>
+                                Pricing varies by menu and session. Details are shared when you reach out
+                                to book. Each experience includes the full tasting menu.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== Map Section ========== -->
+    <section class="section" style="background: var(--bg-secondary);">
+        <div class="container">
+            <div class="text-center mb-lg fade-in">
+                <span class="label label--outline">Location</span>
+                <h2 class="mt-md">Find Us</h2>
+                <p class="text-muted">Rock Paper Scissors Aesthetics, Panampily Nagar Extension, Kochi</p>
+            </div>
+
+            <div class="map-placeholder fade-in">
+                <!-- 
+          GOOGLE MAPS EMBED: Replace this placeholder with an actual Google Maps embed.
+          
+          To get the embed code:
+          1. Go to Google Maps
+          2. Search for "Rock Paper Scissors Aesthetics Kochi"
+          3. Click "Share" → "Embed a map"
+          4. Copy the iframe code and paste below
+          
+          Example:
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=..." 
+            width="100%" 
+            height="100%" 
+            style="border:0; border-radius: var(--radius-md);" 
+            allowfullscreen="" 
+            loading="lazy">
+          </iframe>
+        -->
+                <span style="font-size: 2rem; margin-bottom: var(--space-sm);">📍</span>
+                <span>Google Maps Embed</span>
+                <small class="mt-sm">Replace with actual map iframe</small>
+            </div>
+
+            <div class="text-center mt-lg fade-in">
+                <a href="https://www.google.com/maps/search/Rock+Paper+Scissors+Aesthetics+Panampily+Nagar+Kochi"
+                    target="_blank" rel="noopener" class="btn btn--outline">
+                    Get Directions
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== Footer ========== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__brand">
+                    <a href="index.html" class="navbar__logo">
+                        <span class="navbar__logo-text">The Burn Room</span>
+                        <span class="navbar__logo-sub">by Keshav Menon</span>
+                    </a>
+                    <p class="mt-md">
+                        A chef-curated private dining experience. Limited seats, reservations only.
+                    </p>
+                    <div class="footer__social mt-md">
+                        <a href="https://instagram.com/the_burnroom_" target="_blank" rel="noopener"
+                            aria-label="Instagram">
+                            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                            </svg>
+                        </a>
+                        <a href="tel:+918848795728" aria-label="Phone">
+                            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 00-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer__nav">
+                    <h4 class="footer__heading">Explore</h4>
+                    <ul class="footer__links">
+                        <li><a href="index.html#story">Our Story</a></li>
+                        <li><a href="experience.html">Experience</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="index.html#events">Upcoming Events</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__nav">
+                    <h4 class="footer__heading">Contact</h4>
+                    <ul class="footer__links">
+                        <li><a href="tel:+918848795728">+91 88487 95728</a></li>
+                        <li><a href="https://instagram.com/the_burnroom_" target="_blank">@the_burnroom_</a></li>
+                        <li><a href="contact.html">Get Directions</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p>&copy; 2026 The Burn Room by Keshav Menon. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

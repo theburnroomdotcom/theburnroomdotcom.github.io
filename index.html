@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The Burn Room by Keshav Menon - A chef-curated private dining experience in Kochi. Limited seats, reservations only. An intimate tasting menu designed to be experienced slowly, at one table.">
+  <meta name="keywords" content="private dining, Kochi, tasting menu, chef's table, fine dining, Keshav Menon, The Burn Room">
+  <meta property="og:title" content="The Burn Room - A Curated Private Dining Experience">
+  <meta property="og:description" content="An intimate tasting menu that moves through texture, fermentation, spice, and restraint — designed to be experienced slowly, at one table.">
+  <meta property="og:type" content="website">
+  <title>The Burn Room | A Curated Private Dining Experience</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  
+  <!-- ========== Navigation ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="container navbar__inner">
+      <a href="index.html" class="navbar__logo">
+        <span class="navbar__logo-text">The Burn Room</span>
+        <span class="navbar__logo-sub">by Keshav Menon</span>
+      </a>
+      
+      <ul class="navbar__links">
+        <li><a href="#story" class="navbar__link">Our Story</a></li>
+        <li><a href="#experience" class="navbar__link">Experience</a></li>
+        <li><a href="#menu" class="navbar__link">Menu</a></li>
+        <li><a href="#events" class="navbar__link">Events</a></li>
+        <li><a href="#reserve" class="navbar__link">Reserve</a></li>
+      </ul>
+      
+      <button class="navbar__toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ========== Hero Section ========== -->
+  <section class="hero" id="hero">
+    <!-- 
+      VIDEO BACKGROUND: Replace the src below with your video file.
+      Recommended: Short looping video (15-30 seconds), ambient dining atmosphere or food preparation.
+      Place your video in: assets/videos/hero-bg.mp4
+    -->
+    <video 
+      class="hero__video-bg" 
+      autoplay 
+      muted 
+      loop 
+      playsinline
+      poster="assets/images/hero-fallback.jpg"
+    >
+      <source src="assets/videos/hero-bg.mp4" type="video/mp4">
+      <!-- Fallback for browsers that don't support video -->
+    </video>
+    
+    <!-- 
+      FALLBACK IMAGE: This shows if video fails to load.
+      Replace with your own image: assets/images/hero-fallback.jpg
+    -->
+    <img 
+      src="assets/images/hero-fallback.jpg" 
+      alt="The Burn Room dining atmosphere" 
+      class="hero__image-bg"
+      style="display: none;"
+    >
+    
+    <div class="hero__overlay"></div>
+    
+    <div class="hero__content">
+      <p class="hero__pretitle">A Chef-Curated Private Dining Experience</p>
+      <h1 class="hero__title">The Burn Room</h1>
+      <p class="hero__subtitle">by Keshav Menon</p>
+      <p class="hero__tagline">
+        An intimate tasting menu that moves through texture, fermentation, spice, and restraint — 
+        designed to be experienced slowly, at one table.
+      </p>
+      <a href="#reserve" class="btn btn--primary btn--large">Reserve Your Seat</a>
+    </div>
+    
+    <div class="hero__scroll">
+      <span>Scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ========== Story Section ========== -->
+  <section class="story section section--large" id="story">
+    <div class="container">
+      <div class="story__content">
+        <div class="story__image fade-in">
+          <!-- 
+            CHEF IMAGE: Add a photo of Keshav Menon or the kitchen/plating process.
+            Replace with: assets/images/chef-portrait.jpg
+          -->
+          <img 
+            src="assets/images/chef-portrait.jpg" 
+            alt="Keshav Menon - Chef and Creator of The Burn Room"
+          >
+        </div>
+        
+        <div class="story__text fade-in fade-in-delay-1">
+          <span class="label label--outline">Our Story</span>
+          <h2>Every Course is Plated with Intent</h2>
+          <p>
+            The Burn Room is more than a dining experience — it's a journey through flavor, 
+            texture, and emotion. Founded by Chef Keshav Menon, each intimate session brings 
+            together a carefully curated multi-course tasting menu served at a single table.
+          </p>
+          <p>
+            We believe in the power of restraint, the beauty of fermentation, and the theater 
+            of fire. Every detail is considered, from the first amuse-bouche to the final 
+            sweet note.
+          </p>
+          
+          <blockquote class="story__quote">
+            "This is a fixed-menu, limited-seat dinner, served only by reservation. 
+            Every course is plated with intent, and every detail is considered."
+          </blockquote>
+          
+          <a href="#experience" class="btn btn--outline">Explore the Experience</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Experience Gallery ========== -->
+  <section class="section" id="experience">
+    <div class="container">
+      <div class="text-center mb-lg fade-in">
+        <span class="label">The Experience</span>
+        <h2 class="mt-md">Moments from The Burn Room</h2>
+        <p class="text-muted" style="max-width: 600px; margin: var(--space-md) auto 0;">
+          Glimpses of intimate evenings, artful presentations, and the craft behind every plate.
+        </p>
+      </div>
+      
+      <div class="experience__gallery fade-in fade-in-delay-1">
+        <!-- 
+          GALLERY IMAGES: Replace these placeholders with your actual photos.
+          Recommended sizes:
+          - Item 1 (large): 800x1000px
+          - Items 2-5 (small): 400x250px each
+          
+          Place your images in: assets/images/gallery/
+        -->
+        
+        <div class="experience__item">
+          <!-- Large featured image/video -->
+          <div class="experience__placeholder">
+            <span class="experience__placeholder-icon">🍽️</span>
+            <span>Featured Image</span>
+            <small>800 × 1000px</small>
+          </div>
+          <!-- Replace with: <img src="assets/images/gallery/featured.jpg" alt="Dining experience at The Burn Room"> -->
+        </div>
+        
+        <div class="experience__item">
+          <div class="experience__placeholder">
+            <span class="experience__placeholder-icon">🔥</span>
+            <span>Gallery Image 2</span>
+            <small>400 × 250px</small>
+          </div>
+        </div>
+        
+        <div class="experience__item">
+          <div class="experience__placeholder">
+            <span class="experience__placeholder-icon">🌿</span>
+            <span>Gallery Image 3</span>
+            <small>400 × 250px</small>
+          </div>
+        </div>
+        
+        <div class="experience__item">
+          <div class="experience__placeholder">
+            <span class="experience__placeholder-icon">🍷</span>
+            <span>Gallery Image 4</span>
+            <small>400 × 250px</small>
+          </div>
+        </div>
+        
+        <div class="experience__item">
+          <div class="experience__placeholder">
+            <span class="experience__placeholder-icon">✨</span>
+            <span>Gallery Image 5</span>
+            <small>400 × 250px</small>
+          </div>
+        </div>
+      </div>
+      
+      <div class="text-center mt-lg fade-in">
+        <a href="experience.html" class="btn btn--outline">View Full Gallery</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Menu Preview ========== -->
+  <section class="menu-preview section section--large" id="menu">
+    <div class="container">
+      <div class="menu-preview__content fade-in">
+        <div class="menu-preview__header">
+          <span class="label">Sample Menu</span>
+          <h2 class="mt-md">A Taste of What Awaits</h2>
+          <p class="text-muted">
+            Each session features a unique, seasonal tasting menu. Here's a glimpse 
+            of our culinary journey.
+          </p>
+        </div>
+        
+        <div class="menu-preview__courses">
+          <div class="course fade-in">
+            <span class="course__category">Amuse-Bouche</span>
+            <h3 class="course__name">Porcini Tart & Morel Mousse</h3>
+            <p class="course__description">Porcini tartlet bite, chicken stuffed morel, red wine glaze</p>
+          </div>
+          
+          <div class="course fade-in fade-in-delay-1">
+            <span class="course__category">Appetiser</span>
+            <h3 class="course__name">Shrimp Crack-Head</h3>
+            <p class="course__description">Kochi shrimp, rice cracker, bisque sauce</p>
+          </div>
+          
+          <div class="course fade-in fade-in-delay-2">
+            <span class="course__category">Entrée</span>
+            <h3 class="course__name">The Tuna Press</h3>
+            <p class="course__description">Srilankan tuna, ponzu glaze, honey-avocado purée, cashew-dashi mousse</p>
+          </div>
+          
+          <div class="course fade-in fade-in-delay-3">
+            <span class="course__category">Main Course</span>
+            <h3 class="course__name">Duck Confit Croquettes</h3>
+            <p class="course__description">Confit duck, burned cauliflower, pom molasses, celery aioli</p>
+          </div>
+          
+          <div class="course fade-in">
+            <span class="course__category">Dessert</span>
+            <h3 class="course__name">Espuma Cheesecake</h3>
+            <p class="course__description">Choco brownie, white chocolate ganache, caramel ganache, berry gel</p>
+          </div>
+        </div>
+        
+        <p class="menu-preview__note">
+          *Non-vegetarian. Contains seafood, nuts, and dairy.<br>
+          Menu changes seasonally. Please inform us of any dietary requirements when booking.
+        </p>
+        
+        <a href="menu.html" class="btn btn--primary mt-md">View Full Menu</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Upcoming Events ========== -->
+  <section class="events section" id="events">
+    <div class="container">
+      <div class="text-center mb-lg fade-in">
+        <span class="label">Upcoming Sessions</span>
+        <h2 class="mt-md">Reserve Your Experience</h2>
+        <p class="text-muted">Limited seats available. Book early to secure your table.</p>
+      </div>
+      
+      <div class="events__list">
+        <!-- 
+          UPCOMING EVENTS: Update these with your actual upcoming sessions.
+          Change dates, themes, and availability status as needed.
+        -->
+        
+        <div class="event-card fade-in">
+          <div class="event-card__date">
+            <span class="event-card__day">7</span>
+            <span class="event-card__month">Feb</span>
+          </div>
+          <div class="event-card__info">
+            <h3>A Curated Private Dining Session</h3>
+            <p>Japanese-inspired 7-course tasting menu featuring Nori-Miso, Salmon Kurīmu, and Matcha Basque</p>
+          </div>
+          <div>
+            <span class="event-card__status event-card__status--limited">Limited Seats</span>
+          </div>
+        </div>
+        
+        <div class="event-card fade-in fade-in-delay-1">
+          <div class="event-card__date">
+            <span class="event-card__day">14</span>
+            <span class="event-card__month">Feb</span>
+          </div>
+          <div class="event-card__info">
+            <h3>Valentine's Special Edition</h3>
+            <p>Intimate dining experience for couples — a romantic multi-course journey</p>
+          </div>
+          <div>
+            <span class="event-card__status event-card__status--available">Available</span>
+          </div>
+        </div>
+        
+        <div class="event-card fade-in fade-in-delay-2">
+          <div class="event-card__date">
+            <span class="event-card__day">21</span>
+            <span class="event-card__month">Feb</span>
+          </div>
+          <div class="event-card__info">
+            <h3>Fermentation & Fire</h3>
+            <p>Exploring the art of fermentation paired with live fire cooking techniques</p>
+          </div>
+          <div>
+            <span class="event-card__status event-card__status--available">Available</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Testimonials ========== -->
+  <section class="testimonials section section--large" id="testimonials">
+    <div class="container container--narrow">
+      <div class="text-center mb-lg fade-in">
+        <span class="label">Guest Experiences</span>
+        <h2 class="mt-md">What Our Guests Say</h2>
+      </div>
+      
+      <div class="testimonials__wrapper fade-in">
+        <div class="testimonials__slider">
+          <!-- 
+            TESTIMONIALS: Replace with real guest reviews.
+            Add more testimonial divs as needed.
+          -->
+          
+          <div class="testimonial">
+            <p class="testimonial__quote">
+              An unforgettable evening. Every course told a story, and the attention to detail 
+              was extraordinary. This isn't just dinner — it's an experience.
+            </p>
+            <p class="testimonial__author">— Priya M.</p>
+            <p class="testimonial__role">Guest, December 2025</p>
+          </div>
+          
+          <div class="testimonial">
+            <p class="testimonial__quote">
+              The intimate setting, the creativity in every dish, and Keshav's passion for 
+              his craft make The Burn Room unlike anything else in Kochi.
+            </p>
+            <p class="testimonial__author">— Rahul K.</p>
+            <p class="testimonial__role">Guest, January 2026</p>
+          </div>
+          
+          <div class="testimonial">
+            <p class="testimonial__quote">
+              From the amuse-bouche to the final dessert, we were taken on a journey. 
+              The flavors, the presentation, the vibe — everything was perfect.
+            </p>
+            <p class="testimonial__author">— Ananya S.</p>
+            <p class="testimonial__role">Guest, December 2025</p>
+          </div>
+        </div>
+        
+        <div class="testimonials__nav">
+          <button class="testimonials__dot active" aria-label="Testimonial 1"></button>
+          <button class="testimonials__dot" aria-label="Testimonial 2"></button>
+          <button class="testimonials__dot" aria-label="Testimonial 3"></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Reservation CTA ========== -->
+  <section class="cta section" id="reserve">
+    <div class="container container--narrow">
+      <div class="fade-in">
+        <span class="label">Reserve</span>
+        <h2 class="mt-md">Join Us at The Table</h2>
+        <p>
+          Limited seats. Reservations only. DM us on Instagram or call to book your experience.
+        </p>
+        
+        <div class="flex flex--center gap-md mt-lg" style="flex-wrap: wrap;">
+          <a href="https://instagram.com/the_burnroom_" target="_blank" rel="noopener" class="btn btn--primary btn--large">
+            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            DM on Instagram
+          </a>
+          <a href="tel:+918848795728" class="btn btn--outline btn--large">
+            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 00-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/></svg>
+            Call to Reserve
+          </a>
+        </div>
+        
+        <div class="cta__contact">
+          <span class="cta__phone">+91 88487 95728</span>
+          <span>Rock Paper Scissors Aesthetics, Panampily Nagar Extension, Kochi</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Footer ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__content">
+        <div class="footer__brand">
+          <a href="index.html" class="navbar__logo">
+            <span class="navbar__logo-text">The Burn Room</span>
+            <span class="navbar__logo-sub">by Keshav Menon</span>
+          </a>
+          <p class="mt-md">
+            A chef-curated private dining experience. Limited seats, reservations only. 
+            Every course is plated with intent.
+          </p>
+          <div class="footer__social mt-md">
+            <a href="https://instagram.com/the_burnroom_" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+            <a href="tel:+918848795728" aria-label="Phone">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 00-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/></svg>
+            </a>
+          </div>
+        </div>
+        
+        <div class="footer__nav">
+          <h4 class="footer__heading">Explore</h4>
+          <ul class="footer__links">
+            <li><a href="#story">Our Story</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="#events">Upcoming Events</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer__nav">
+          <h4 class="footer__heading">Contact</h4>
+          <ul class="footer__links">
+            <li><a href="tel:+918848795728">+91 88487 95728</a></li>
+            <li><a href="https://instagram.com/the_burnroom_" target="_blank">@the_burnroom_</a></li>
+            <li><a href="contact.html">Get Directions</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer__bottom">
+        <p>&copy; 2026 The Burn Room by Keshav Menon. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>
