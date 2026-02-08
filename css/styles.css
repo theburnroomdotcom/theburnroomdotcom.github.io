@@ -899,6 +899,62 @@ a:hover {
   font-weight: 500;
 }
 
+/* ---------- FAQ ---------- */
+.faq {
+  background: var(--bg-secondary);
+}
+
+.faq__list {
+  display: grid;
+  gap: var(--space-sm);
+}
+
+.faq__item {
+  background: var(--bg-card);
+  border: 1px solid rgba(197, 165, 114, 0.25);
+  border-radius: var(--radius-sm);
+  padding: 0.9rem 1rem;
+}
+
+.faq__item summary {
+  cursor: pointer;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.faq__item p {
+  margin: 0.75rem 0 0;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+/* ---------- Floating reserve ---------- */
+.floating-reserve {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 1200;
+  background: var(--accent-gold);
+  color: var(--text-dark);
+  border-radius: 999px;
+  padding: 0.75rem 1rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  box-shadow: var(--shadow-subtle);
+}
+
+.floating-reserve:hover {
+  color: var(--text-dark);
+  background: var(--accent-gold-light);
+}
+
+@media (min-width: 1024px) {
+  .floating-reserve {
+    display: none;
+  }
+}
+
 /* ---------- Footer ---------- */
 .footer {
   padding: var(--space-lg) 0;
