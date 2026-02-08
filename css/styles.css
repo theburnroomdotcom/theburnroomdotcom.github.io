@@ -1066,6 +1066,62 @@ a:hover {
   .footer__social {
     justify-content: center;
   }
+
+  /* Mobile compaction */
+  .section {
+    padding: 3.25rem 0;
+  }
+
+  .section--large {
+    padding: 4rem 0;
+  }
+
+  .hero {
+    min-height: 76vh;
+  }
+
+  .hero__content {
+    padding: 1rem;
+    max-width: 92vw;
+  }
+
+  .hero__title {
+    font-size: 2.15rem;
+  }
+
+  .hero__tagline {
+    font-size: 1.05rem;
+    margin-bottom: 1rem;
+  }
+
+  .story__content,
+  .grid--2 {
+    gap: 1.15rem;
+  }
+
+  .story__image {
+    aspect-ratio: 4/4.8;
+  }
+
+  .experience__gallery {
+    gap: 0.7rem;
+  }
+
+  .mission__card,
+  .quote-card,
+  .faq__item {
+    padding: 0.85rem;
+  }
+
+  .cta__contact {
+    margin-top: 1rem;
+  }
+
+  .floating-reserve {
+    bottom: 0.75rem;
+    right: 0.75rem;
+    padding: 0.65rem 0.9rem;
+  }
 }
 
 /* ---------- Phase 4 Additions ---------- */
