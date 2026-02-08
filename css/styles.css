@@ -511,7 +511,7 @@ a:hover {
 
 /* ---------- Story Section ---------- */
 .story {
-  background: var(--bg-secondary);
+  background: transparent;
 }
 
 .story__content {
@@ -596,7 +596,7 @@ a:hover {
 
 /* ---------- Cinema Section ---------- */
 .cinema {
-  background: #111914;
+  background: transparent;
 }
 
 .cinema__frame {
@@ -849,7 +849,7 @@ a:hover {
 
 /* ---------- Testimonials ---------- */
 .testimonials {
-  background: var(--bg-primary);
+  background: transparent;
   overflow: hidden;
 }
 
@@ -923,7 +923,7 @@ a:hover {
   position: relative;
   padding: var(--space-2xl) 0;
   text-align: center;
-  background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
+  background: transparent;
 }
 
 .cta::before {
@@ -965,7 +965,7 @@ a:hover {
 
 /* ---------- FAQ ---------- */
 .faq {
-  background: var(--bg-secondary);
+  background: transparent;
 }
 
 .faq__list {
@@ -974,7 +974,7 @@ a:hover {
 }
 
 .faq__item {
-  background: var(--bg-card);
+  background: rgba(8, 18, 16, 0.34);
   border: 1px solid rgba(197, 165, 114, 0.25);
   border-radius: var(--radius-sm);
   padding: 0.9rem 1rem;
@@ -1022,8 +1022,8 @@ a:hover {
 /* ---------- Footer ---------- */
 .footer {
   padding: var(--space-lg) 0;
-  background: var(--bg-secondary);
-  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  background: transparent;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .footer__content {
@@ -1183,7 +1183,7 @@ a:hover {
 
 /* ---------- Phase 4 Additions ---------- */
 .mission {
-  background: var(--bg-primary);
+  background: transparent;
 }
 
 .mission__grid {
@@ -1191,7 +1191,7 @@ a:hover {
 }
 
 .mission__card {
-  background: var(--bg-card);
+  background: rgba(8, 18, 16, 0.34);
   border: 1px solid rgba(197, 165, 114, 0.22);
   border-radius: var(--radius-md);
   padding: 1.2rem;
@@ -1216,7 +1216,7 @@ a:hover {
 }
 
 .quote-card {
-  background: var(--bg-card);
+  background: rgba(8, 18, 16, 0.34);
   border: 1px solid rgba(197, 165, 114, 0.25);
   border-radius: var(--radius-sm);
   padding: 1rem;
