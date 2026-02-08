@@ -470,6 +470,18 @@ a:hover {
   text-shadow: 0 8px 30px rgba(0,0,0,0.35);
 }
 
+.hero__title-logo-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.hero__title-logo {
+  width: min(560px, 82vw);
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.28);
+}
+
 .hero__subtitle {
   font-size: 0.74rem;
   letter-spacing: 0.28em;
