@@ -1123,6 +1123,14 @@ a:hover {
     right: 0.75rem;
     padding: 0.65rem 0.9rem;
   }
+
+  /* Avoid hidden-content flashes on mobile */
+  .js-enabled .fade-in,
+  .js-enabled .fade-in.visible {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
 }
 
 /* ---------- Phase 4 Additions ---------- */
