@@ -161,7 +161,7 @@ function initHeroSlideshow() {
     slides[idx].classList.remove('is-active');
     idx = (idx + 1) % slides.length;
     slides[idx].classList.add('is-active');
-  }, 5000);
+  }, 6500);
 }
 
 /* ---------- Smooth Scroll for Anchor Links ---------- */

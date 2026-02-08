@@ -399,7 +399,8 @@ a:hover {
   position: absolute;
   inset: 0;
   opacity: 0;
-  transition: opacity 1.1s ease;
+  transition: opacity 1.8s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity;
 }
 
 .hero__slide.is-active {
