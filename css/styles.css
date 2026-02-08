@@ -262,7 +262,7 @@ a:hover {
   left: 0;
   right: 0;
   z-index: 1000;
-  padding: var(--space-sm) 0;
+  padding: 0.4rem 0;
   background: transparent;
   transition: var(--transition-base);
 }
@@ -287,13 +287,13 @@ a:hover {
 }
 
 .brand-logo {
-  width: 176px;
-  max-width: 42vw;
+  width: 154px;
+  max-width: 36vw;
   height: auto;
-  border-radius: 10px;
-  border: 1px solid rgba(143, 190, 185, 0.22);
-  box-shadow: 0 4px 14px rgba(0,0,0,0.18);
-  background: rgba(19, 42, 37, 0.35);
+  border-radius: 8px;
+  border: 1px solid rgba(143, 190, 185, 0.2);
+  box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+  background: rgba(19, 42, 37, 0.32);
   backdrop-filter: blur(2px);
 }
 
@@ -379,17 +379,17 @@ a:hover {
   }
 
   .navbar {
-    padding: 0.55rem 0;
+    padding: 0.35rem 0;
   }
 
   .navbar__inner {
-    min-height: 56px;
+    min-height: 48px;
   }
 
   .brand-logo {
-    width: 126px;
-    max-width: 34vw;
-    border-radius: 8px;
+    width: 112px;
+    max-width: 31vw;
+    border-radius: 7px;
   }
 
   .brand-logo--footer {
