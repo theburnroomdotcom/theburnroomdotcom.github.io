@@ -1045,6 +1045,66 @@ a:hover {
   }
 }
 
+/* ---------- Phase 4 Additions ---------- */
+.mission {
+  background: var(--bg-primary);
+}
+
+.mission__grid {
+  align-items: stretch;
+}
+
+.mission__card {
+  background: var(--bg-card);
+  border: 1px solid rgba(197, 165, 114, 0.22);
+  border-radius: var(--radius-md);
+  padding: 1.2rem;
+}
+
+.mission__list {
+  margin: 0;
+  padding-left: 1.2rem;
+  color: var(--text-secondary);
+}
+
+.mission__list li { margin-bottom: 0.6rem; }
+
+.mission__vision,
+.mission__vision-note {
+  color: var(--text-secondary);
+}
+
+.testimonials__stack {
+  display: grid;
+  gap: var(--space-sm);
+}
+
+.quote-card {
+  background: var(--bg-card);
+  border: 1px solid rgba(197, 165, 114, 0.25);
+  border-radius: var(--radius-sm);
+  padding: 1rem;
+}
+
+.quote-card p {
+  margin: 0;
+  color: var(--text-primary);
+  font-size: 1.02rem;
+}
+
+.quote-card span {
+  display: block;
+  margin-top: 0.55rem;
+  color: var(--accent-gold);
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+}
+
+.cta-call,
+.cta__phone {
+  white-space: nowrap;
+}
+
 /* ---------- Page Header (for inner pages) ---------- */
 .page-header {
   padding: calc(var(--space-2xl) + 60px) 0 var(--space-xl);
