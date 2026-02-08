@@ -620,10 +620,10 @@ a:hover {
   display: block;
 }
 
-/* first two chef images: vertical crop ~20% */
+/* first two chef images: uncropped */
 .chef__slide--crop img {
-  height: 120%;
-  margin-top: -10%;
+  height: 100%;
+  margin-top: 0;
 }
 
 /* ---------- Cinema Section ---------- */
