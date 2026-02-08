@@ -5,21 +5,21 @@
 
 /* ---------- CSS Custom Properties ---------- */
 :root {
-  /* Colors - Dark Moody Palette */
-  --bg-primary: #0d1510;
-  --bg-secondary: #1a2820;
-  --bg-card: #1f2f25;
-  --bg-overlay: rgba(13, 21, 16, 0.85);
+  /* Colors - Brand-led Palette (from logo) */
+  --bg-primary: #132a25;
+  --bg-secondary: #1b3831;
+  --bg-card: #23453d;
+  --bg-overlay: rgba(19, 42, 37, 0.86);
   
-  --accent-gold: #c5a572;
-  --accent-gold-light: #d4b98a;
+  --accent-gold: #8fbeb9;
+  --accent-gold-light: #a9d2cd;
   --accent-coral: #c96b5a;
-  --accent-teal: #4a9e8c;
+  --accent-teal: #6eb3ab;
   
-  --text-primary: #f5f5f0;
-  --text-secondary: #d4d4cf;
-  --text-muted: #9ca39e;
-  --text-dark: #0d1510;
+  --text-primary: #eef5f3;
+  --text-secondary: #d5e2de;
+  --text-muted: #9bb2ac;
+  --text-dark: #10241f;
   
   /* Typography */
   --font-heading: 'Playfair Display', Georgia, serif;
@@ -284,6 +284,18 @@ a:hover {
   flex-direction: column;
   align-items: center;
   text-decoration: none;
+}
+
+.brand-logo {
+  width: 190px;
+  max-width: 44vw;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 0 6px 22px rgba(0,0,0,0.25);
+}
+
+.brand-logo--footer {
+  width: 170px;
 }
 
 .navbar__logo-text {
