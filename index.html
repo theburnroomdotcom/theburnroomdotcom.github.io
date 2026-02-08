@@ -23,6 +23,7 @@
       </a>
       <ul class="navbar__links">
         <li><a href="#story" class="navbar__link">Story</a></li>
+        <li><a href="#chef" class="navbar__link">Chef</a></li>
         <li><a href="#cinema" class="navbar__link">Film</a></li>
         <li><a href="#mission" class="navbar__link">Mission</a></li>
         <li><a href="#gallery" class="navbar__link">Gallery</a></li>
@@ -43,13 +44,18 @@
         </video>
       </div>
       <div class="hero__slide">
-        <img src="assets/images/chef-standing.png" alt="" class="hero__image-bg">
-      </div>
-      <div class="hero__slide">
-        <img src="assets/images/chef-hosting.png" alt="" class="hero__image-bg">
+        <video class="hero__video-bg" autoplay muted loop playsinline preload="metadata" poster="assets/images/gallery/plated-fruit-wide.jpg">
+          <source src="assets/videos/chef-prep-secondary.mp4" type="video/mp4">
+        </video>
       </div>
       <div class="hero__slide">
         <img src="assets/images/gallery/prep-cheese-grate.jpg" alt="" class="hero__image-bg">
+      </div>
+      <div class="hero__slide">
+        <img src="assets/images/gallery/soup-dumpling.jpg" alt="" class="hero__image-bg">
+      </div>
+      <div class="hero__slide">
+        <img src="assets/images/gallery/dessert-table.jpg" alt="" class="hero__image-bg">
       </div>
     </div>
     <div class="hero__overlay"></div>
@@ -66,7 +72,7 @@
     <div class="container">
       <div class="story__content">
         <div class="story__image">
-          <img src="assets/images/chef-hosting.png" alt="The chef hosting guests at Burn Room">
+          <img src="assets/images/gallery/plated-fruit-wide.jpg" alt="Signature Burn Room plated course">
         </div>
         <div class="story__text">
           <span class="label label--outline">History</span>
@@ -77,6 +83,21 @@
           <p>Ingredients are sourced with intent. There are mornings that begin with sourcing runs from Kochi to Idukki, because quality is treated as a decision, not a slogan. Burn Room is led by the chef, with one low-key reference to Chef Keshav Menon in the house story.</p>
           <blockquote class="story__quote">Kochi needed a room like this — small, rare, and uncompromising.</blockquote>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="chef">
+    <div class="container">
+      <div class="text-center mb-lg">
+        <span class="label">About The Chef</span>
+        <h2 class="mt-md">The Chef Behind Burn Room</h2>
+      </div>
+      <div class="experience__gallery">
+        <div class="experience__item"><img src="assets/images/chef-hosting.png" alt="Chef hosting guests"></div>
+        <div class="experience__item"><img src="assets/images/chef-standing.png" alt="Chef in dining room"></div>
+        <div class="experience__item"><img src="assets/images/chef-portrait.jpg" alt="Chef portrait"></div>
+        <div class="experience__item"><img src="assets/images/chef-keshav-prep.jpg" alt="Chef prep moment"></div>
       </div>
     </div>
   </section>
@@ -124,11 +145,17 @@
         <h2 class="mt-md">Selected Moments</h2>
       </div>
       <div class="experience__gallery">
+        <div class="experience__item"><video autoplay muted loop playsinline preload="metadata" poster="assets/images/gallery/prep-cheese-grate.jpg"><source src="assets/videos/hero-prep-main.mp4" type="video/mp4"></video></div>
+        <div class="experience__item"><video autoplay muted loop playsinline preload="metadata" poster="assets/images/gallery/plated-fruit-wide.jpg"><source src="assets/videos/chef-prep-secondary.mp4" type="video/mp4"></video></div>
+        <div class="experience__item"><video autoplay muted loop playsinline preload="metadata" poster="assets/images/gallery/prep-cheese-grate.jpg"><source src="assets/videos/chef-keshav-action.mp4" type="video/mp4"></video></div>
         <div class="experience__item"><img src="assets/images/gallery/prep-cheese-grate.jpg" alt="Prep close-up"></div>
         <div class="experience__item"><img src="assets/images/gallery/soup-dumpling.jpg" alt="Pink broth and dumpling course"></div>
         <div class="experience__item"><img src="assets/images/gallery/dessert-table.jpg" alt="Dessert service at table"></div>
         <div class="experience__item"><img src="assets/images/gallery/canape-stone.jpg" alt="Canape presentation"></div>
         <div class="experience__item"><img src="assets/images/gallery/plated-fruit-wide.jpg" alt="Signature plated fruit course"></div>
+        <div class="experience__item"><img src="assets/images/gallery/dish-cream-bowl.jpg" alt="Cream bowl dessert"></div>
+        <div class="experience__item"><img src="assets/images/gallery/dish-fruit-plating.jpg" alt="Fruit plating close-up"></div>
+        <div class="experience__item"><img src="assets/images/gallery/dish-topdown-alt.jpg" alt="Top-down plated dish"></div>
       </div>
     </div>
   </section>
@@ -212,6 +239,7 @@
           <h4 class="footer__heading">Explore</h4>
           <ul class="footer__links">
             <li><a href="#story">Story</a></li>
+            <li><a href="#chef">Chef</a></li>
             <li><a href="#cinema">Film</a></li>
             <li><a href="#mission">Mission</a></li>
             <li><a href="#gallery">Gallery</a></li>
