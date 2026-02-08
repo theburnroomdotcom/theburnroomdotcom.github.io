@@ -452,6 +452,12 @@ a:hover {
   text-align: center;
   padding: var(--space-md);
   animation: fadeInUp 1s ease-out;
+  background: rgba(7, 16, 14, 0.34);
+  border: 1px solid rgba(200, 230, 224, 0.22);
+  border-radius: 16px;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.22);
 }
 
 .hero__pretitle {
