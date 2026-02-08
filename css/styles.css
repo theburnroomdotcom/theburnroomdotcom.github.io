@@ -593,23 +593,37 @@ a:hover {
 }
 
 /* ---------- Chef Section ---------- */
-.chef__gallery {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: var(--space-sm);
-}
-
-.chef__item {
+.chef__tile {
+  position: relative;
   border-radius: var(--radius-md);
   overflow: hidden;
-  min-height: 260px;
+  min-height: 420px;
+  max-width: 980px;
+  margin: 0 auto;
 }
 
-.chef__item img {
+.chef__slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.chef__slide--active {
+  opacity: 1;
+}
+
+.chef__slide img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
+}
+
+/* first two chef images: vertical crop ~20% */
+.chef__slide--crop img {
+  height: 120%;
+  margin-top: -10%;
 }
 
 /* ---------- Cinema Section ---------- */
@@ -1166,12 +1180,8 @@ a:hover {
     gap: 0.7rem;
   }
 
-  .chef__gallery {
-    grid-template-columns: 1fr;
-  }
-
-  .chef__item {
-    min-height: 220px;
+  .chef__tile {
+    min-height: 300px;
   }
 
   .mission__card,

@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initMobileNav();
   initVideoBackground();
   initHeroSlideshow();
+  initChefTileSlideshow();
 });
 
 /* ---------- Navbar Scroll Effect ---------- */
@@ -162,6 +163,19 @@ function initHeroSlideshow() {
     idx = (idx + 1) % slides.length;
     slides[idx].classList.add('is-active');
   }, 6500);
+}
+
+/* ---------- Chef Tile Slideshow ---------- */
+function initChefTileSlideshow() {
+  const slides = document.querySelectorAll('.chef__slide');
+  if (!slides || slides.length < 2) return;
+
+  let idx = 0;
+  setInterval(() => {
+    slides[idx].classList.remove('chef__slide--active');
+    idx = (idx + 1) % slides.length;
+    slides[idx].classList.add('chef__slide--active');
+  }, 4200);
 }
 
 /* ---------- Smooth Scroll for Anchor Links ---------- */
