@@ -4,6 +4,7 @@
    ============================================ */
 
 document.addEventListener('DOMContentLoaded', () => {
+  document.body.classList.add('js-enabled');
   initNavbar();
   initScrollAnimations();
   initTestimonialSlider();
