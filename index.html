@@ -36,10 +36,22 @@
   </nav>
 
   <section class="hero" id="hero">
-    <video class="hero__video-bg" autoplay muted loop playsinline preload="metadata" poster="assets/images/chef-standing.png">
-      <source src="assets/videos/hero-prep-main.mp4" type="video/mp4">
-    </video>
-    <img src="assets/images/chef-standing.png" alt="Burn Room table setting" class="hero__image-bg" style="display:none;">
+    <div class="hero__slideshow" aria-hidden="true">
+      <div class="hero__slide is-active">
+        <video class="hero__video-bg" autoplay muted loop playsinline preload="metadata" poster="assets/images/chef-standing.png">
+          <source src="assets/videos/hero-prep-main.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="hero__slide">
+        <img src="assets/images/chef-standing.png" alt="" class="hero__image-bg">
+      </div>
+      <div class="hero__slide">
+        <img src="assets/images/chef-hosting.png" alt="" class="hero__image-bg">
+      </div>
+      <div class="hero__slide">
+        <img src="assets/images/gallery/prep-cheese-grate.jpg" alt="" class="hero__image-bg">
+      </div>
+    </div>
     <div class="hero__overlay"></div>
     <div class="hero__content">
       <p class="hero__pretitle">Kochi’s Most Limited Dining Opening</p>

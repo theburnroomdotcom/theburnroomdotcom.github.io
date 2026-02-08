@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initTestimonialSlider();
   initMobileNav();
   initVideoBackground();
+  initHeroSlideshow();
 });
 
 /* ---------- Navbar Scroll Effect ---------- */
@@ -148,6 +149,19 @@ function initVideoBackground() {
   }, { threshold: 0.25 });
 
   observer.observe(video);
+}
+
+/* ---------- Hero Slideshow ---------- */
+function initHeroSlideshow() {
+  const slides = document.querySelectorAll('.hero__slide');
+  if (!slides || slides.length < 2) return;
+
+  let idx = 0;
+  setInterval(() => {
+    slides[idx].classList.remove('is-active');
+    idx = (idx + 1) % slides.length;
+    slides[idx].classList.add('is-active');
+  }, 5000);
 }
 
 /* ---------- Smooth Scroll for Anchor Links ---------- */
