@@ -1141,30 +1141,40 @@ a:hover {
   }
 
   /* Mobile compaction */
+  .container {
+    padding: 0 0.9rem;
+  }
+
   .section {
-    padding: 3.25rem 0;
+    padding: 2.75rem 0;
   }
 
   .section--large {
-    padding: 4rem 0;
+    padding: 3.25rem 0;
   }
 
   .hero {
-    min-height: 76vh;
+    min-height: 74vh;
   }
 
   .hero__content {
-    padding: 1rem;
-    max-width: 92vw;
+    padding: 1rem 0.9rem;
+    max-width: 94vw;
+    margin: 0 auto;
   }
 
   .hero__title {
-    font-size: 2.15rem;
+    font-size: 2.05rem;
+  }
+
+  .hero__title-logo {
+    width: min(340px, 86vw);
   }
 
   .hero__tagline {
-    font-size: 1.05rem;
-    margin-bottom: 1rem;
+    font-size: 1rem;
+    margin-bottom: 0.9rem;
+    line-height: 1.45;
   }
 
   .story__content,
@@ -1187,11 +1197,23 @@ a:hover {
   .mission__card,
   .quote-card,
   .faq__item {
-    padding: 0.85rem;
+    padding: 0.9rem;
+  }
+
+  .mission__list,
+  .quote-card p,
+  .faq__item p {
+    font-size: 0.92rem;
+    line-height: 1.5;
+  }
+
+  .cta .btn {
+    width: 100%;
+    max-width: 320px;
   }
 
   .cta__contact {
-    margin-top: 1rem;
+    margin-top: 0.9rem;
   }
 
   .floating-reserve {
