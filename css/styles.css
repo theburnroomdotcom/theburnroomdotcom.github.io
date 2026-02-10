@@ -560,6 +560,8 @@ a:hover {
 .mission__vision,
 .mission__vision-note {
   color: var(--text-secondary);
+  opacity: 0;
+  transform: translateY(20px);
 }
 
 @media (max-width: 768px) {
@@ -807,6 +809,13 @@ a:hover {
   line-height: 1.8;
 }
 
+/* Chef text legibility */
+.chef__text-block p,
+.chef__text-block h2,
+.chef__text-layer .label {
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
 /* ============================================
    STORY — Sticky image left, scroll text right
    ============================================ */
@@ -957,7 +966,7 @@ a:hover {
 
 .faq__item p {
   margin: 0.75rem 0 0;
-  color: var(--text-secondary);
+  color: var(--text-secondary) !important;
   font-size: 0.95rem;
 }
 
@@ -1020,13 +1029,21 @@ a:hover {
   }
 }
 
+.cta__content h2 {
+  color: var(--text-primary);
+}
+
+.cta__content p {
+  color: var(--text-secondary);
+}
+
 .cta__contact {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: var(--space-sm);
   margin-top: var(--space-lg);
-  color: var(--text-muted);
+  color: var(--text-secondary);
   font-size: 0.875rem;
 }
 
@@ -1164,7 +1181,9 @@ a:hover {
     padding: 0 1rem;
   }
 
+  /* --- 1. Hero: content overflow --- */
   .hero {
+    min-height: 100svh;
     min-height: 85vh;
   }
 
@@ -1172,22 +1191,30 @@ a:hover {
     padding: 1rem 0.9rem;
     max-width: 94vw;
     margin: 0 auto;
+    background: rgba(6, 14, 12, 0.45);
   }
 
   .hero__title-logo {
-    width: min(340px, 86vw);
+    width: min(260px, 72vw);
+  }
+
+  .btn--large {
+    padding: 0.8em 2em;
+    font-size: 0.85rem;
+    max-height: 52px;
   }
 
   .hero__tagline {
-    font-size: 1rem;
+    font-size: 0.95rem;
     margin-bottom: 0.9rem;
     line-height: 1.45;
   }
 
   .hero__scroll-indicator {
-    bottom: 1rem;
+    bottom: 0.75rem;
   }
 
+  /* --- 2. Mission: visibility fallback --- */
   .mission {
     min-height: auto;
     padding: var(--space-lg) 0;
@@ -1197,14 +1224,15 @@ a:hover {
     padding: var(--space-sm);
   }
 
-  .testimonials__pin-wrap {
-    padding: 0 var(--space-sm);
+  /* Fallback: make mission content visible even if JS animations don't fire */
+  .mission__list li,
+  .mission__vision,
+  .mission__vision-note {
+    opacity: 1 !important;
+    transform: none !important;
   }
 
-  .testimonial-card {
-    padding: var(--space-md);
-  }
-
+  /* --- 3. Chef: stronger overlay for text readability --- */
   .chef__text-layer {
     padding: var(--space-md);
     max-width: 100%;
@@ -1213,10 +1241,32 @@ a:hover {
   .chef__image-overlay {
     background: linear-gradient(
       to top,
-      rgba(19, 42, 37, 0.9) 0%,
-      rgba(19, 42, 37, 0.6) 50%,
-      rgba(19, 42, 37, 0.3) 100%
+      rgba(19, 42, 37, 0.95) 0%,
+      rgba(19, 42, 37, 0.85) 40%,
+      rgba(19, 42, 37, 0.6) 70%,
+      rgba(19, 42, 37, 0.4) 100%
     );
+  }
+
+  /* --- 4. Story: clear fixed navbar + min-height --- */
+  .story-section {
+    padding-top: calc(60px + var(--space-md));
+    min-height: auto;
+  }
+
+  .story__text-col {
+    padding-top: 0;
+    padding-bottom: var(--space-lg);
+  }
+
+  .story__sticky-image {
+    min-height: 200px;
+  }
+
+  /* --- 5. CTA: remove bloated space + contrast --- */
+  .cta-section {
+    min-height: auto;
+    padding: var(--space-xl) 0;
   }
 
   .cta__buttons {
@@ -1228,14 +1278,81 @@ a:hover {
     max-width: 320px;
   }
 
+  .cta__content h2 {
+    color: var(--text-primary);
+  }
+
+  .cta__content p {
+    color: var(--text-secondary);
+  }
+
+  /* --- 6. Testimonials: tighter spacing --- */
+  .testimonials__pin-wrap {
+    padding: 0 var(--space-sm);
+  }
+
+  .testimonials__header {
+    top: 4vh;
+  }
+
+  .testimonials__progress {
+    bottom: 4vh;
+  }
+
+  .testimonials__progress-dot {
+    width: 14px;
+    height: 14px;
+  }
+
+  .testimonials__cards {
+    height: auto;
+    min-height: 200px;
+  }
+
+  .testimonial-card {
+    padding: var(--space-md);
+  }
+
+  /* --- 7. Gallery: full-width, consistent gaps --- */
+  .gallery__strip {
+    padding: 0 1rem;
+    gap: 0.75rem;
+  }
+
+  .gallery__item {
+    width: calc(100% - 2rem);
+    margin: 0 auto;
+    height: 60vw;
+  }
+
+  /* --- 8. Contrast: lighten muted text --- */
+  .text-muted {
+    color: #a8c4be;
+  }
+
+  .cta__contact {
+    color: var(--text-secondary);
+  }
+
+  /* --- 9. Floating reserve: safe area --- */
   .floating-reserve {
     bottom: 0.75rem;
     right: 0.75rem;
     padding: 0.65rem 0.9rem;
+    min-height: 44px;
+    min-width: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .faq-section {
     min-height: auto;
+    padding-bottom: calc(var(--space-lg) + 3rem);
+  }
+
+  .footer {
+    padding-bottom: calc(var(--space-lg) + 3rem);
   }
 }
 

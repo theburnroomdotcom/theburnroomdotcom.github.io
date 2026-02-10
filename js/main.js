@@ -233,6 +233,10 @@
     const cards = document.querySelectorAll('.mission__card');
     if (!cards.length) return;
 
+    const mobile = isMobile();
+    const cardStart = mobile ? 'top 95%' : 'top 85%';
+    const itemStart = mobile ? 'top 95%' : 'top 80%';
+
     cards.forEach((card, i) => {
       // Card entrance
       const cardAnim = gsap.to(card, {
@@ -243,7 +247,7 @@
         ease: 'power2.out',
         scrollTrigger: trackST(ScrollTrigger.create({
           trigger: card,
-          start: 'top 85%',
+          start: cardStart,
           toggleActions: 'play none none none',
         })),
       });
@@ -260,7 +264,25 @@
           ease: 'power2.out',
           scrollTrigger: trackST(ScrollTrigger.create({
             trigger: card,
-            start: 'top 80%',
+            start: itemStart,
+            toggleActions: 'play none none none',
+          })),
+        });
+      }
+
+      // Also reveal vision text inside
+      const visionEls = card.querySelectorAll('.mission__vision, .mission__vision-note');
+      if (visionEls.length) {
+        gsap.to(visionEls, {
+          opacity: 1,
+          y: 0,
+          duration: 0.6,
+          stagger: 0.15,
+          delay: i * 0.3 + 0.4,
+          ease: 'power2.out',
+          scrollTrigger: trackST(ScrollTrigger.create({
+            trigger: card,
+            start: itemStart,
             toggleActions: 'play none none none',
           })),
         });
@@ -578,6 +600,17 @@
         toggleActions: 'play none none none',
       })),
     });
+
+    // Hide floating reserve button when CTA section is visible
+    const floatingBtn = document.querySelector('.floating-reserve');
+    if (floatingBtn) {
+      trackST(ScrollTrigger.create({
+        trigger: section,
+        start: 'top 80%',
+        onEnter: () => gsap.to(floatingBtn, { opacity: 0, pointerEvents: 'none', duration: 0.3 }),
+        onLeaveBack: () => gsap.to(floatingBtn, { opacity: 1, pointerEvents: 'auto', duration: 0.3 }),
+      }));
+    }
   }
 
   /* ============================================
