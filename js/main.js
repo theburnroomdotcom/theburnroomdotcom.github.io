@@ -9,7 +9,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initScrollAnimations();
   initTestimonialSlider();
   initMobileNav();
-  initVideoBackground();
   initHeroSlideshow();
   initChefTileSlideshow();
 });
@@ -123,45 +122,34 @@ function initTestimonialSlider() {
   }
 }
 
-/* ---------- Video Background ---------- */
-function initVideoBackground() {
-  const video = document.querySelector('.hero__video-bg');
-  if (!video) return;
+/* ---------- Hero Slideshow ---------- */
+function syncHeroMedia(slides, activeIndex) {
+  slides.forEach((slide, i) => {
+    const video = slide.querySelector('video');
+    if (!video) return;
 
-  // Ensure video plays
-  video.play().catch(() => {
-    // If autoplay fails, show fallback image
-    const fallback = document.querySelector('.hero__image-bg');
-    if (fallback) {
-      video.style.display = 'none';
-      fallback.style.display = 'block';
+    if (i === activeIndex) {
+      video.preload = 'metadata';
+      video.play().catch(() => {});
+    } else {
+      video.pause();
+      video.preload = 'none';
     }
   });
-
-  // Pause video when not visible to save resources
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        video.play();
-      } else {
-        video.pause();
-      }
-    });
-  }, { threshold: 0.25 });
-
-  observer.observe(video);
 }
 
-/* ---------- Hero Slideshow ---------- */
 function initHeroSlideshow() {
   const slides = document.querySelectorAll('.hero__slide');
   if (!slides || slides.length < 2) return;
 
   let idx = 0;
+  syncHeroMedia(slides, idx);
+
   setInterval(() => {
     slides[idx].classList.remove('is-active');
     idx = (idx + 1) % slides.length;
     slides[idx].classList.add('is-active');
+    syncHeroMedia(slides, idx);
   }, 6500);
 }
 
