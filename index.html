@@ -16,7 +16,6 @@
 </head>
 <body>
 
-  <!-- ========== NAVBAR ========== -->
   <nav class="navbar" id="navbar">
     <div class="container navbar__inner">
       <a href="index.html" class="navbar__logo" aria-label="The Burn Room Home">
@@ -37,7 +36,6 @@
     </div>
   </nav>
 
-  <!-- ========== HERO ========== -->
   <section class="hero" id="hero">
     <div class="hero__slideshow" aria-hidden="true">
       <div class="hero__slide is-active">
@@ -61,36 +59,28 @@
       </div>
     </div>
     <div class="hero__overlay"></div>
-    <div class="hero__content" data-scroll-fade>
+    <div class="hero__content">
       <p class="hero__pretitle">Vision · Mission</p>
       <h1 class="hero__title hero__title-logo-wrap"><img src="assets/images/brand-logo.jpg" alt="The Burn Room" class="hero__title-logo"></h1>
       <p class="hero__subtitle">INTIMATE DINING. UNCOMPROMISING QUALITY. RARE OPENINGS.</p>
       <p class="hero__tagline">To create a benchmark for intimate dining where precision, rarity, and responsibly sourced ingredients define every opening.</p>
       <a href="#reserve" class="btn btn--primary btn--large">RESERVE INTEREST</a>
     </div>
-    <div class="hero__scroll-indicator" aria-hidden="true">
-      <span>Scroll</span>
-      <div class="hero__scroll-line"></div>
-      <svg class="hero__chevron" width="20" height="12" viewBox="0 0 20 12" fill="none">
-        <path d="M1 1L10 10L19 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-      </svg>
-    </div>
   </section>
 
-  <!-- ========== MISSION / VISION ========== -->
   <section class="section mission" id="mission">
     <div class="container">
-      <div class="mission__grid">
-        <div class="mission__card" data-reveal>
+      <div class="grid grid--2 mission__grid">
+        <div class="mission__card">
           <span class="label label--outline">Mission</span>
           <ul class="mission__list mt-md">
-            <li data-reveal-item>Work exclusively with premium, responsibly sourced ingredients, regardless of cost pressure.</li>
-            <li data-reveal-item>Design limited-seat experiences where excellence is never diluted.</li>
-            <li data-reveal-item>Respect ingredients through disciplined technique and deliberate execution.</li>
-            <li data-reveal-item>Serve food that cannot be replicated — only experienced.</li>
+            <li>Work exclusively with premium, responsibly sourced ingredients, regardless of cost pressure.</li>
+            <li>Design limited-seat experiences where excellence is never diluted.</li>
+            <li>Respect ingredients through disciplined technique and deliberate execution.</li>
+            <li>Serve food that cannot be replicated — only experienced.</li>
           </ul>
         </div>
-        <div class="mission__card" data-reveal>
+        <div class="mission__card">
           <span class="label label--outline">Vision</span>
           <p class="mission__vision mt-md">To set the benchmark for intimate dining where quality, precision, and rarity define every opening.</p>
           <p class="mission__vision-note">This is The Burn Room first. The room leads. The chef follows through.</p>
@@ -99,136 +89,101 @@
     </div>
   </section>
 
-  <!-- ========== TESTIMONIALS (pinned stacked cards) ========== -->
-  <section class="testimonials-section" id="testimonials">
-    <div class="testimonials__pin-wrap">
-      <div class="testimonials__header">
+  <section class="testimonials section section--large" id="testimonials">
+    <div class="container container--narrow">
+      <div class="text-center mb-lg">
         <span class="label">Guest Voices</span>
         <h2 class="mt-md">What Guests Are Saying</h2>
       </div>
-      <div class="testimonials__cards">
-        <article class="testimonial-card" data-testimonial="0">
-          <p class="testimonial-card__quote">"One of the best dinners we've ever had — each course kept raising the bar."</p>
-          <span class="testimonial-card__author">Shweta Ann Jacob · Host Hospitality</span>
+      <div class="testimonials__stack">
+        <article class="quote-card">
+          <p>“One of the best dinners we’ve ever had — each course kept raising the bar.”</p>
+          <span>Shweta Ann Jacob · Host Hospitality</span>
         </article>
-        <article class="testimonial-card" data-testimonial="1">
-          <p class="testimonial-card__quote">"Kochi needed this. Rare seats, serious food, and an experience that actually feels exclusive."</p>
-          <span class="testimonial-card__author">Thomas K Saju · Popular Group</span>
+        <article class="quote-card">
+          <p>“Kochi needed this. Rare seats, serious food, and an experience that actually feels exclusive.”</p>
+          <span>Thomas K Saju · Popular Group</span>
         </article>
-        <article class="testimonial-card" data-testimonial="2">
-          <p class="testimonial-card__quote">"I couldn't decide which dish was my favorite because every next plate felt even better."</p>
-          <span class="testimonial-card__author">Arathy Varma · Varma Homes</span>
+        <article class="quote-card">
+          <p>“I couldn’t decide which dish was my favorite because every next plate felt even better.”</p>
+          <span>Arathy Varma · Varma Homes</span>
         </article>
-      </div>
-      <div class="testimonials__progress">
-        <div class="testimonials__progress-dot active" data-dot="0"></div>
-        <div class="testimonials__progress-dot" data-dot="1"></div>
-        <div class="testimonials__progress-dot" data-dot="2"></div>
       </div>
     </div>
   </section>
 
-  <!-- ========== GALLERY (horizontal scroll) ========== -->
-  <section class="gallery-section" id="gallery">
-    <div class="gallery__header">
-      <div class="container">
+  <section class="section" id="gallery">
+    <div class="container">
+      <div class="text-center mb-lg">
         <span class="label">Kitchen & Menu Frames</span>
         <h2 class="mt-md">Selected Moments</h2>
       </div>
-    </div>
-    <div class="gallery__pin-wrap">
-      <div class="gallery__strip">
-        <div class="gallery__item"><video autoplay muted loop playsinline preload="metadata" poster="assets/images/gallery/prep-cheese-grate.jpg"><source src="assets/videos/hero-prep-main.mp4" type="video/mp4"></video></div>
-        <div class="gallery__item"><video autoplay muted loop playsinline preload="metadata" poster="assets/images/gallery/plated-fruit-wide.jpg"><source src="assets/videos/chef-prep-secondary.mp4" type="video/mp4"></video></div>
-        <div class="gallery__item"><video autoplay muted loop playsinline preload="metadata" poster="assets/images/gallery/prep-cheese-grate.jpg"><source src="assets/videos/chef-keshav-action.mp4" type="video/mp4"></video></div>
-        <div class="gallery__item"><img src="assets/images/gallery/prep-cheese-grate.jpg" alt="Prep close-up"></div>
-        <div class="gallery__item"><img src="assets/images/gallery/soup-dumpling.jpg" alt="Pink broth and dumpling course"></div>
-        <div class="gallery__item"><img src="assets/images/gallery/dessert-table.jpg" alt="Dessert service at table"></div>
-        <div class="gallery__item"><img src="assets/images/gallery/canape-stone.jpg" alt="Canape presentation"></div>
-        <div class="gallery__item"><img src="assets/images/gallery/plated-fruit-wide.jpg" alt="Signature plated fruit course"></div>
-        <div class="gallery__item"><img src="assets/images/gallery/dish-cream-bowl.jpg" alt="Cream bowl dessert"></div>
-        <div class="gallery__item"><img src="assets/images/gallery/dish-fruit-plating.jpg" alt="Fruit plating close-up"></div>
-        <div class="gallery__item"><img src="assets/images/gallery/dish-topdown-alt.jpg" alt="Top-down plated dish"></div>
+      <div class="experience__gallery">
+        <div class="experience__item"><video autoplay muted loop playsinline preload="metadata" poster="assets/images/gallery/prep-cheese-grate.jpg"><source src="assets/videos/hero-prep-main.mp4" type="video/mp4"></video></div>
+        <div class="experience__item"><video autoplay muted loop playsinline preload="metadata" poster="assets/images/gallery/plated-fruit-wide.jpg"><source src="assets/videos/chef-prep-secondary.mp4" type="video/mp4"></video></div>
+        <div class="experience__item"><video autoplay muted loop playsinline preload="metadata" poster="assets/images/gallery/prep-cheese-grate.jpg"><source src="assets/videos/chef-keshav-action.mp4" type="video/mp4"></video></div>
+        <div class="experience__item"><img src="assets/images/gallery/prep-cheese-grate.jpg" alt="Prep close-up"></div>
+        <div class="experience__item"><img src="assets/images/gallery/soup-dumpling.jpg" alt="Pink broth and dumpling course"></div>
+        <div class="experience__item"><img src="assets/images/gallery/dessert-table.jpg" alt="Dessert service at table"></div>
+        <div class="experience__item"><img src="assets/images/gallery/canape-stone.jpg" alt="Canape presentation"></div>
+        <div class="experience__item"><img src="assets/images/gallery/plated-fruit-wide.jpg" alt="Signature plated fruit course"></div>
+        <div class="experience__item"><img src="assets/images/gallery/dish-cream-bowl.jpg" alt="Cream bowl dessert"></div>
+        <div class="experience__item"><img src="assets/images/gallery/dish-fruit-plating.jpg" alt="Fruit plating close-up"></div>
+        <div class="experience__item"><img src="assets/images/gallery/dish-topdown-alt.jpg" alt="Top-down plated dish"></div>
       </div>
     </div>
   </section>
 
-  <!-- ========== CHEF (pinned image + scrolling text) ========== -->
-  <section class="chef-section" id="chef">
-    <div class="chef__pin-wrap">
-      <div class="chef__image-layer">
-        <div class="chef__slide chef__slide--active"><img src="assets/images/chef-hosting.png" alt="Chef hosting guests"></div>
-        <div class="chef__slide"><img src="assets/images/chef-standing.png" alt="Chef in dining room"></div>
-        <div class="chef__slide"><img src="assets/images/chef-portrait.jpg" alt="Chef portrait"></div>
-        <div class="chef__image-overlay"></div>
-      </div>
-      <div class="chef__text-layer">
-        <div class="chef__text-block" data-chef-text>
-          <span class="label">About The Chef</span>
-          <h2 class="mt-md">The Chef Behind The Burn Room</h2>
-        </div>
-        <div class="chef__text-block" data-chef-text>
-          <p>Chef Keshav Menon leads each opening personally — from sourcing to final pass — so every guest receives the room exactly as intended.</p>
-        </div>
-        <div class="chef__text-block" data-chef-text>
-          <p>Every ingredient is chosen with intent. Every technique refined over years. The result is food that tells a story of discipline and passion.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== STORY (sticky image + scrolling text) ========== -->
-  <section class="story-section" id="story">
+  <section class="section" id="chef">
     <div class="container">
-      <div class="story__layout">
-        <div class="story__image-col">
-          <div class="story__sticky-image">
-            <img src="assets/images/gallery/plated-fruit-wide.jpg" alt="Signature The Burn Room plated course" class="story__img story__img--active" data-story-img="0">
-            <img src="assets/images/gallery/soup-dumpling.jpg" alt="Pink broth" class="story__img" data-story-img="1">
-            <img src="assets/images/gallery/canape-stone.jpg" alt="Canape" class="story__img" data-story-img="2">
-            <img src="assets/images/gallery/dessert-table.jpg" alt="Dessert" class="story__img" data-story-img="3">
-          </div>
+      <div class="text-center mb-lg">
+        <span class="label">About The Chef</span>
+        <h2 class="mt-md">The Chef Behind The Burn Room</h2>
+        <p class="text-muted">Chef Keshav Menon leads each opening personally — from sourcing to final pass — so every guest receives the room exactly as intended.</p>
+      </div>
+      <div class="chef__tile">
+        <div class="chef__slide chef__slide--active chef__slide--crop"><img src="assets/images/chef-hosting.png" alt="Chef hosting guests"></div>
+        <div class="chef__slide chef__slide--crop"><img src="assets/images/chef-standing.png" alt="Chef in dining room"></div>
+        <div class="chef__slide"><img src="assets/images/chef-portrait.jpg" alt="Chef portrait"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="story section section--large" id="story">
+    <div class="container">
+      <div class="story__content">
+        <div class="story__image">
+          <img src="assets/images/gallery/plated-fruit-wide.jpg" alt="Signature The Burn Room plated course">
         </div>
-        <div class="story__text-col">
-          <div class="story__text-block" data-story-trigger="0">
-            <span class="label label--outline">History</span>
-            <h2>From Large-Scale Service to Limited Fine Dining</h2>
-          </div>
-          <div class="story__text-block" data-story-trigger="1">
-            <p>The Burn Room is rooted in heritage hospitality and rebuilt around a modern, invitation-led format. The work moved from high-volume systems into an intimate service model where detail, pacing, and execution define the experience.</p>
-          </div>
-          <div class="story__text-block" data-story-trigger="2">
-            <p>Guided by the quiet discipline of Japanese influence and sharpened in professional kitchens, The Burn Room combines precision technique with fearless creativity — including fermentation, fire, and molecular gastronomy where it serves the dish, never the ego.</p>
-            <p>Some courses require up to 72 hours of preparation. Even seemingly simple plates are engineered for depth, freshness, and timing. In one menu, the pink broth with dumplings was built over 48 hours while preserving clarity and lift.</p>
-          </div>
-          <div class="story__text-block" data-story-trigger="3">
-            <p>Ingredients are sourced with intent. There are mornings that begin with sourcing runs from Kochi to Idukki, because quality is treated as a decision, not a slogan. The Burn Room is chef-led, detail-obsessed, and designed to feel rare without feeling distant.</p>
-          </div>
-          <div class="story__text-block story__quote-block" data-story-quote>
-            <blockquote class="story__quote">Kochi needed a room like this — small, rare, and uncompromising.</blockquote>
-          </div>
+        <div class="story__text">
+          <span class="label label--outline">History</span>
+          <h2>From Large-Scale Service to Limited Fine Dining</h2>
+          <p>The Burn Room is rooted in heritage hospitality and rebuilt around a modern, invitation-led format. The work moved from high-volume systems into an intimate service model where detail, pacing, and execution define the experience.</p>
+          <p>Guided by the quiet discipline of Japanese influence and sharpened in professional kitchens, The Burn Room combines precision technique with fearless creativity — including fermentation, fire, and molecular gastronomy where it serves the dish, never the ego.</p>
+          <p>Some courses require up to 72 hours of preparation. Even seemingly simple plates are engineered for depth, freshness, and timing. In one menu, the pink broth with dumplings was built over 48 hours while preserving clarity and lift.</p>
+          <p>Ingredients are sourced with intent. There are mornings that begin with sourcing runs from Kochi to Idukki, because quality is treated as a decision, not a slogan. The Burn Room is chef-led, detail-obsessed, and designed to feel rare without feeling distant.</p>
+          <blockquote class="story__quote">Kochi needed a room like this — small, rare, and uncompromising.</blockquote>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ========== FAQ ========== -->
-  <section class="section faq-section" id="faq">
+  <section class="section faq" id="faq">
     <div class="container container--narrow">
       <div class="text-center mb-lg">
         <span class="label">FAQ</span>
         <h2 class="mt-md">Before You Reserve</h2>
       </div>
       <div class="faq__list">
-        <details class="faq__item" data-faq open>
+        <details class="faq__item" open>
           <summary>How often does The Burn Room open?</summary>
           <p>Openings are limited and intentionally infrequent to protect quality and experience.</p>
         </details>
-        <details class="faq__item" data-faq>
+        <details class="faq__item">
           <summary>How many guests are seated?</summary>
           <p>A limited number of guests are hosted per opening to keep service highly personal.</p>
         </details>
-        <details class="faq__item" data-faq>
+        <details class="faq__item">
           <summary>Is this a standard restaurant format?</summary>
           <p>No. The Burn Room is a curated, limited fine-dining format with invitation-style scarcity.</p>
         </details>
@@ -236,19 +191,17 @@
     </div>
   </section>
 
-  <!-- ========== RESERVE CTA ========== -->
-  <section class="cta-section" id="reserve">
-    <div class="cta__dark-overlay"></div>
-    <div class="cta__content">
-      <div class="container container--narrow text-center">
-        <span class="label" data-cta-reveal>Reserve</span>
-        <h2 class="mt-md" data-cta-reveal>Request the Next Opening</h2>
-        <p data-cta-reveal>Stay with the official handle for opening drops and confirmations.</p>
-        <div class="cta__buttons" data-cta-reveal>
+  <section class="cta section" id="reserve">
+    <div class="container container--narrow">
+      <div class="fade-in">
+        <span class="label">Reserve</span>
+        <h2 class="mt-md">Request the Next Opening</h2>
+        <p>Stay with the official handle for opening drops and confirmations.</p>
+        <div class="flex flex--center gap-md mt-lg" style="flex-wrap: wrap;">
           <a href="https://instagram.com/the_burnroom_" target="_blank" rel="noopener" class="btn btn--primary btn--large">DM ON INSTAGRAM</a>
           <a href="tel:+918848795728" class="btn btn--outline btn--large cta-call">CALL +91 88487 95728</a>
         </div>
-        <div class="cta__contact" data-cta-reveal>
+        <div class="cta__contact">
           <span class="cta__phone">+91 88487 95728</span>
           <span>Panampilly Nagar Extension, Kochi — Next To Rock Paper Scissors Aesthetics</span>
         </div>
@@ -256,10 +209,16 @@
     </div>
   </section>
 
-  <!-- ========== FLOATING RESERVE ========== -->
+
+
+
+
+
+
+
+
   <a href="#reserve" class="floating-reserve" aria-label="Reserve now">Reserve</a>
 
-  <!-- ========== FOOTER ========== -->
   <footer class="footer">
     <div class="container">
       <div class="footer__content">
@@ -292,10 +251,6 @@
     </div>
   </footer>
 
-  <!-- ========== SCRIPTS ========== -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-  <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
