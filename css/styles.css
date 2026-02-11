@@ -503,11 +503,9 @@ a:hover {
   text-align: center;
   padding: var(--space-md);
   animation: fadeInUp 1s ease-out;
-  background: rgba(6, 14, 12, 0.56);
-  border: 1px solid rgba(200, 230, 224, 0.34);
+  background: #0F1E1B;
+  border: 1px solid rgba(112, 169, 156, 0.42);
   border-radius: 16px;
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
   box-shadow: 0 16px 34px rgba(0,0,0,0.30);
 }
 
