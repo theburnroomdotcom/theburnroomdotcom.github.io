@@ -310,6 +310,43 @@ a:hover {
   border-radius: 8px;
 }
 
+.brand-mark {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 1;
+  color: #70A99C;
+}
+
+.brand-mark__main {
+  font-family: 'Inter', sans-serif;
+  font-weight: 800;
+  font-size: 1rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-shadow:
+    0 0 1px rgba(112, 169, 156, 0.7),
+    0.6px 0 rgba(112, 169, 156, 0.45),
+    -0.6px 0 rgba(112, 169, 156, 0.35);
+}
+
+.brand-mark__sub {
+  margin-top: 0.2rem;
+  font-family: var(--font-heading);
+  font-size: 0.54rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #7EB4A8;
+}
+
+.brand-mark--header .brand-mark__main {
+  font-size: 0.92rem;
+}
+
+.brand-mark--footer .brand-mark__main {
+  font-size: 1.08rem;
+}
+
 .brand-logo--footer {
   width: 160px;
   opacity: 0.95;
@@ -385,13 +422,27 @@ a:hover {
     min-height: 44px;
   }
 
-  .navbar__brand-main {
-    font-size: 1.06rem;
+  .brand-mark--header .brand-mark__main {
+    font-size: 0.78rem;
+    letter-spacing: 0.07em;
+  }
+
+  .brand-mark--header .brand-mark__sub {
+    font-size: 0.48rem;
+    letter-spacing: 0.16em;
   }
 
   .navbar__brand-sub {
+    font-size: 0.46rem;
+    letter-spacing: 0.14em;
+  }
+
+  .brand-mark--footer .brand-mark__main {
+    font-size: 0.92rem;
+  }
+
+  .brand-mark--footer .brand-mark__sub {
     font-size: 0.5rem;
-    letter-spacing: 0.16em;
   }
 
   .brand-logo--footer {
