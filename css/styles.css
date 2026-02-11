@@ -310,11 +310,6 @@ a:hover {
   border-radius: 8px;
 }
 
-.brand-logo--header {
-  width: 138px;
-  max-width: 32vw;
-}
-
 .brand-logo--footer {
   width: 160px;
   opacity: 0.95;
@@ -390,14 +385,13 @@ a:hover {
     min-height: 44px;
   }
 
-  .brand-logo--header {
-    width: 118px;
-    max-width: 44vw;
+  .navbar__brand-main {
+    font-size: 1.06rem;
   }
 
   .navbar__brand-sub {
-    font-size: 0.48rem;
-    letter-spacing: 0.14em;
+    font-size: 0.5rem;
+    letter-spacing: 0.16em;
   }
 
   .brand-logo--footer {
@@ -492,14 +486,6 @@ a:hover {
   height: auto;
   border-radius: 6px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.28);
-}
-
-.hero__logo-description {
-  font-size: 0.82rem;
-  letter-spacing: 0.06em;
-  color: #b8d3ce;
-  margin: 0.25rem auto 0.9rem;
-  max-width: 620px;
 }
 
 .hero__subtitle {
@@ -1078,13 +1064,6 @@ a:hover {
   gap: var(--space-lg);
 }
 
-.footer__logo-description {
-  color: #b7d0cb;
-  font-size: 0.82rem;
-  line-height: 1.55;
-  max-width: 360px;
-}
-
 .footer__brand p {
   color: var(--text-muted);
   font-size: 0.875rem;
@@ -1190,13 +1169,6 @@ a:hover {
 
   .hero__title-logo {
     width: min(340px, 86vw);
-  }
-
-  .hero__logo-description {
-    font-size: 0.72rem;
-    letter-spacing: 0.03em;
-    margin-bottom: 0.7rem;
-    max-width: 90%;
   }
 
   .hero__tagline {

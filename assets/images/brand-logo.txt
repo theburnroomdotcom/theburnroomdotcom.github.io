@@ -1,9 +1,0 @@
-Typography:
-Main Title ("THE BURN ROOM"): The font is a bold, condensed sans-serif display typeface. It is characterized by its thick, flat strokes and narrow width. The text has been heavily treated with a grunge, distressed texture, which gives it a worn, scratched, and eroded appearance, making it look like a stamp or stencil on a rough surface. This is likely a custom or highly modified font, but it shares characteristics with typefaces like Impact or Bebas Neue, to which a texture has been applied.
-
-Subtitle ("BY KESHAV MENON"): This text uses a different font, which is an elegant, classic, all-caps serif typeface. It has a moderate weight and features a high contrast between its thick and thin strokes. The style is reminiscent of Roman monumental lettering, similar to fonts like Trajan, Cinzel, or Crimson Text.
-
-Color Palette:
-Text Color: All text ("THE BURN ROOM" and "BY KESHAV MENON") is rendered in the same color. It is a muted, desaturated medium teal or sage green. An approximate hexadecimal color code would be #70A99C or #6A9E93.
-
-Background Color: The background is a solid, very dark, deep teal or forest green, almost black. An approximate hexadecimal color code would be #0F1E1B.
