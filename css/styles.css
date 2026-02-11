@@ -740,6 +740,15 @@ a:hover {
   transform: rotate(90deg) scale(1.52);
 }
 
+.experience__item--topdown img {
+  transform: rotate(90deg) scale(1.42);
+  transform-origin: center;
+}
+
+.experience__item--topdown:hover img {
+  transform: rotate(90deg) scale(1.5);
+}
+
 .experience__item::after {
   content: '';
   position: absolute;
