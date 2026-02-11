@@ -730,6 +730,16 @@ a:hover {
   transform: scale(1.1);
 }
 
+/* Fix orientation for canape-stone frame */
+.experience__item--canape img {
+  transform: rotate(90deg) scale(1.45);
+  transform-origin: center;
+}
+
+.experience__item--canape:hover img {
+  transform: rotate(90deg) scale(1.52);
+}
+
 .experience__item::after {
   content: '';
   position: absolute;
